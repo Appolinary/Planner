@@ -99,6 +99,7 @@
 			children = (
 				551C1B3021BDE4B8007A3981 /* AppDelegate.swift */,
 				551C1B3221BDE4B8007A3981 /* ViewController.swift */,
+				551C1B5E21BDE79F007A3981 /* Views */,
 				551C1B3421BDE4B8007A3981 /* Main.storyboard */,
 				551C1B3721BDE4BA007A3981 /* Assets.xcassets */,
 				551C1B3921BDE4BA007A3981 /* LaunchScreen.storyboard */,
@@ -123,6 +124,13 @@
 				551C1B5221BDE4BA007A3981 /* Info.plist */,
 			);
 			path = PlannerUITests;
+			sourceTree = "<group>";
+		};
+		551C1B5E21BDE79F007A3981 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
