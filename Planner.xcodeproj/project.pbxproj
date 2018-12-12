@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		551C1B3121BDE4B8007A3981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C1B3021BDE4B8007A3981 /* AppDelegate.swift */; };
-		551C1B3321BDE4B8007A3981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C1B3221BDE4B8007A3981 /* ViewController.swift */; };
+		551C1B3321BDE4B8007A3981 /* PlannerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C1B3221BDE4B8007A3981 /* PlannerHomeViewController.swift */; };
 		551C1B3621BDE4B8007A3981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551C1B3421BDE4B8007A3981 /* Main.storyboard */; };
 		551C1B3821BDE4BA007A3981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 551C1B3721BDE4BA007A3981 /* Assets.xcassets */; };
 		551C1B3B21BDE4BA007A3981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551C1B3921BDE4BA007A3981 /* LaunchScreen.storyboard */; };
 		551C1B4621BDE4BA007A3981 /* PlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C1B4521BDE4BA007A3981 /* PlannerTests.swift */; };
 		551C1B5121BDE4BA007A3981 /* PlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C1B5021BDE4BA007A3981 /* PlannerUITests.swift */; };
+		55AB70C721C0AFF10048B9DF /* PlannerHomeViewController+TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB70C621C0AFF10048B9DF /* PlannerHomeViewController+TableViewDelegate.swift */; };
+		55AB70C921C0B0B30048B9DF /* PlannerHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB70C821C0B0B30048B9DF /* PlannerHomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		551C1B2D21BDE4B8007A3981 /* Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		551C1B3021BDE4B8007A3981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		551C1B3221BDE4B8007A3981 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		551C1B3221BDE4B8007A3981 /* PlannerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerHomeViewController.swift; sourceTree = "<group>"; };
 		551C1B3521BDE4B8007A3981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		551C1B3721BDE4BA007A3981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		551C1B3A21BDE4BA007A3981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		551C1B4C21BDE4BA007A3981 /* PlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		551C1B5021BDE4BA007A3981 /* PlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerUITests.swift; sourceTree = "<group>"; };
 		551C1B5221BDE4BA007A3981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55AB70C621C0AFF10048B9DF /* PlannerHomeViewController+TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlannerHomeViewController+TableViewDelegate.swift"; sourceTree = "<group>"; };
+		55AB70C821C0B0B30048B9DF /* PlannerHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerHomeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,13 @@
 		551C1B2F21BDE4B8007A3981 /* Planner */ = {
 			isa = PBXGroup;
 			children = (
-				551C1B3021BDE4B8007A3981 /* AppDelegate.swift */,
-				551C1B3221BDE4B8007A3981 /* ViewController.swift */,
+				55AB70C521C0AFBF0048B9DF /* Model */,
+				55AB70C421C0AFAC0048B9DF /* ViewModel */,
+				551C1B5E21BDE79F007A3981 /* View */,
 				551C1B3421BDE4B8007A3981 /* Main.storyboard */,
 				551C1B3721BDE4BA007A3981 /* Assets.xcassets */,
 				551C1B3921BDE4BA007A3981 /* LaunchScreen.storyboard */,
+				551C1B3021BDE4B8007A3981 /* AppDelegate.swift */,
 				551C1B3C21BDE4BA007A3981 /* Info.plist */,
 			);
 			path = Planner;
@@ -123,6 +129,30 @@
 				551C1B5221BDE4BA007A3981 /* Info.plist */,
 			);
 			path = PlannerUITests;
+			sourceTree = "<group>";
+		};
+		551C1B5E21BDE79F007A3981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				551C1B3221BDE4B8007A3981 /* PlannerHomeViewController.swift */,
+				55AB70C821C0B0B30048B9DF /* PlannerHomeTableViewCell.swift */,
+				55AB70C621C0AFF10048B9DF /* PlannerHomeViewController+TableViewDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55AB70C421C0AFAC0048B9DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		55AB70C521C0AFBF0048B9DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				551C1B3321BDE4B8007A3981 /* ViewController.swift in Sources */,
+				551C1B3321BDE4B8007A3981 /* PlannerHomeViewController.swift in Sources */,
+				55AB70C921C0B0B30048B9DF /* PlannerHomeTableViewCell.swift in Sources */,
+				55AB70C721C0AFF10048B9DF /* PlannerHomeViewController+TableViewDelegate.swift in Sources */,
 				551C1B3121BDE4B8007A3981 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

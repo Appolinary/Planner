@@ -15,7 +15,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let rootViewController = PlannerHomeViewController(nibName: nil, bundle: nil)
+        let navigationController = UINavigationController(rootViewController: rootViewController)
+        navigationController.navigationBar.backgroundColor = UIColor.white
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.backgroundColor = UIColor.black
+        
+        window?.rootViewController =  navigationController
+        
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
